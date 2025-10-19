@@ -5,7 +5,7 @@ import { assets } from '../../assets/assets'
 const TestimonialsSection = () => {
   return (
     <div className='pb-14 px-8 md:px-0'>
-      <h2 className='text-3xl font-medium text-gray-800'> What Our Learners Say </h2>
+      <h2 className='text-3xl font-bold text-gray-800'> What Our Learners Say </h2>
       <p> Hear from learners who have transformed their skills and careers with Manabu’s expert-led courses. </p>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
             px-4 md:px-0 md:my-16 my-10 gap-6 md:gap-8'>

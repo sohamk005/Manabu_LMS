@@ -49,7 +49,7 @@ import profile_img_2 from './profile_img_2.png';
 import profile_img_3 from './profile_img_3.png';
 import profile_img_4 from './profile_img_4.png';
 import profile_img_5 from './profile_img_5.png';
-
+import arrow from './arrow.png';
 
 // Export all imported images for easy access across the application
 export const assets = {
@@ -100,5 +100,6 @@ export const assets = {
   profile_img_2,
   profile_img_3,
   profile_img_4,
-  profile_img_5
+  profile_img_5,
+  arrow
 };
