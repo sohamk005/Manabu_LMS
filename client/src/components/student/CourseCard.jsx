@@ -19,7 +19,7 @@ const CourseCard = ({course}) => {
             {[...Array(5)].map((_, i) => (<img className='w-3.5 h-3.5' key={i} src={i < Math.floor (calculateRating(course)) ? assets.star : assets.star_blank} 
             alt="star"/>))}
           </div>
-          <p className='text-gray-500'> {course.courseRatings.length} </p>
+          <p className='text-gray-500'> {(course.courseRatings?.length || 0)} </p>
         </div>
         <p className='text-base font-semibold text-gray-800'> {currency} {(course.coursePrice - course.discount * course.coursePrice / 100).toFixed(2)}</p>
       </div>

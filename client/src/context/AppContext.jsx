@@ -16,13 +16,17 @@ export const AppContextProvider = (props) => {
     }
 
     const calculateRating = (course) => {
-        if(course.courseRatings.length === 0) return 0;
-        let totalRating = 0
-        course.courseRatings.forEach(rating => {
-            totalRating += rating.rating
-        })
-        return (totalRating / course.courseRatings.length).toFixed(1);
-    }
+    const ratings = Array.isArray(course?.courseRatings) ? course.courseRatings : [];
+    if (ratings.length === 0) return 0;
+
+    let totalRating = 0;
+    ratings.forEach(rating => {
+        totalRating += rating.rating;
+    });
+
+    return (totalRating / ratings.length).toFixed(1);
+};
+
 
     useEffect(() => {
         fetchAllCourses();
