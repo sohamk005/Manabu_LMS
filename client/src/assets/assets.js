@@ -32,6 +32,24 @@ import sections from './sections.png';
 import success from './success.png';
 import user from './user.png';
 import user1 from './user1.png';
+import sketch from './sketch.png';
+import cpp_logo from './cpp_logo.png';
+import java_logo from './java_logo.png';
+import python_logo from './python_logo.jpg';  
+import js_logo from './js_logo.png';
+import react_logo from './react_logo.png';
+import flask_logo from './flask_logo.png';
+import cpp_image from './cpp_image.png';
+import java_image from './java_image.png';
+import python_image from './python_image.png';
+import star from './star.png';
+import star_blank from './star_blank.png';
+import profile_img_1 from './profile_img_1.png';
+import profile_img_2 from './profile_img_2.png';
+import profile_img_3 from './profile_img_3.png';
+import profile_img_4 from './profile_img_4.png';
+import profile_img_5 from './profile_img_5.png';
+
 
 // Export all imported images for easy access across the application
 export const assets = {
@@ -66,4 +84,21 @@ export const assets = {
   success,
   user,
   user1,
+  sketch,
+  cpp_logo,
+  java_logo,
+  python_logo,
+  js_logo,
+  react_logo,
+  flask_logo,
+  cpp_image,
+  java_image,
+  python_image,
+  star,
+  star_blank,
+  profile_img_1,
+  profile_img_2,
+  profile_img_3,
+  profile_img_4,
+  profile_img_5
 };
