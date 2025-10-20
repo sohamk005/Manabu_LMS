@@ -1,6 +1,9 @@
 import { createContext, useEffect, useState } from "react";
 import { Courses } from "../assets/course_data.js";
 import { useNavigate } from "react-router-dom";
+import humanizeDuration from "humanize-duration";
+
+
 export const AppContext = createContext();
 
 export const AppContextProvider = (props) => {
@@ -10,6 +13,7 @@ export const AppContextProvider = (props) => {
     const navigate = useNavigate()
     const [allCourses, setAllCourses] = useState([]);
     const [isEducator, setIsEducator] = useState(true);
+    const [enrolledCourses, setEnrolledCourses] = useState([]);
 
     const fetchAllCourses = async () => {
         setAllCourses(Courses)
@@ -27,13 +31,43 @@ export const AppContextProvider = (props) => {
     return (totalRating / ratings.length).toFixed(1);
 };
 
+    const calculateChapterTime = (chapter) =>{
+        let time = 0
+        chapter.chapterContent.map((lecture) => time += lecture.lectureDuration)
+        return humanizeDuration(time * 60 * 1000, { units: ['h', 'm'], round: true });
+    
+    }
+
+    const calculateCourseDuration = (course) => {
+        let time = 0
+        course.courseContent.map((chapter) => chapter.chapterContent.map((lecture) => time += lecture.lectureDuration))
+        return humanizeDuration(time * 60 * 1000, { units: ['h', 'm'], round: true });
+    }
+
+    const calculateNOfLectures = (course) => {
+        let lectures = 0
+        course.courseContent.forEach(chapter => {
+            if(Array.isArray(chapter.chapterContent)){
+                lectures += chapter.chapterContent.length
+            }
+        })
+        return lectures;
+    }
+
+    const fetchUserEnrolledCourses = async () => {
+        setEnrolledCourses(Courses)
+    }
 
     useEffect(() => {
         fetchAllCourses();
+        fetchUserEnrolledCourses();
+        
     }, [])
     const value = {
             currency, allCourses, navigate, calculateRating, 
-            isEducator, setIsEducator
+            isEducator, setIsEducator, calculateChapterTime,
+            calculateCourseDuration, calculateNOfLectures, enrolledCourses,
+            fetchUserEnrolledCourses
 
         }
 

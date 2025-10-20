@@ -16,7 +16,7 @@ export const Courses = [
         chapterOrder: 1,
         chapterTitle: "Getting Started and Basic Syntax",
         chapterContent: [
-          { lectureId: "lec_cpp_1_1", lectureTitle: "Setup: Visual Studio Code & GCC", lectureDuration: 12, lectureUrl: "https://youtu.be/CPP1A", isPreviewFree: true, lectureOrder: 1 },
+          { lectureId: "lec_cpp_1_1", lectureTitle: "Setup: Visual Studio Code & GCC", lectureDuration: 12, lectureUrl: "nLRL_NcnK-4", isPreviewFree: true, lectureOrder: 1 },
           { lectureId: "lec_cpp_1_2", lectureTitle: "Variables, Data Types, and Operators", lectureDuration: 18, lectureUrl: "https://youtu.be/CPP1B", isPreviewFree: false, lectureOrder: 2 }
         ]
       },
