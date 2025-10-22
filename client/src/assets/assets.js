@@ -54,6 +54,15 @@ import cross_icon from './cross_icon.png';
 import down_arrow_icon from './down_arrow_icon.png';
 import clock from './clock.png'
 import lesson from './lesson.png'
+import home_icon from './home_icon.png'
+import my_course from './my_course.png'
+import add_icon from './add_icon.png'
+import person_tick_icon from './person_tick_icon.png'
+import yt_icon from './yt_icon.png'
+import twitter_icon from './twitter_icon.png'
+import insta_icon from './insta_icon.png'
+
+
 
 // Export all imported images for easy access across the application
 export const assets = {
@@ -109,5 +118,46 @@ export const assets = {
   cross_icon,
   down_arrow_icon,
   clock,
-  lesson
+  lesson,
+  home_icon,
+  add_icon,
+  my_course,
+  person_tick_icon,
+  yt_icon,
+  twitter_icon,
+  insta_icon
 };
+
+// This data would typically be exported from a file like:
+// '../../assets/index.js' or '../../assets/dashboardData.js'
+
+export const dummyDashboardData = {
+    // Used for the "Total Enrolments" card.
+    // The component accesses its length: dashboardData.enrolledStudentsData.length
+    enrolledStudentsData: [
+        { id: 1, name: "Alice Johnson" },
+        { id: 2, name: "Bob Smith" },
+        { id: 3, name: "Charlie Brown" },
+        { id: 4, name: "Diana Prince" },
+        { id: 5, name: "Eve Polastri" },
+        { id: 6, name: "Frank Miller" },
+        // ... add more students for a larger count
+    ],
+
+    // Used for the "Total Courses" card.
+    // The component accesses it directly: dashboardData.totalCourses
+    totalCourses: 18,
+
+    // Used for the "Total Earnings" card.
+    // The component accesses it directly: dashboardData.totalEarnings
+    totalEarnings: 45789.50,
+
+    // Add other potential dashboard data here
+    recentActivity: [
+        { event: "New course added: React Hooks", time: "2 hours ago" },
+        { event: "Student Eve Polastri enrolled", time: "5 hours ago" },
+    ],
+    // ...
+};
+
+
