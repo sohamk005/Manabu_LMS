@@ -61,8 +61,8 @@ import person_tick_icon from './person_tick_icon.png'
 import yt_icon from './yt_icon.png'
 import twitter_icon from './twitter_icon.png'
 import insta_icon from './insta_icon.png'
-
-
+import earnings from './earnings.png'
+import file_upload_icon from './file_upload_icon.png'
 
 // Export all imported images for easy access across the application
 export const assets = {
@@ -125,7 +125,9 @@ export const assets = {
   person_tick_icon,
   yt_icon,
   twitter_icon,
-  insta_icon
+  insta_icon,
+  earnings,
+  file_upload_icon
 };
 
 // This data would typically be exported from a file like:
@@ -159,5 +161,57 @@ export const dummyDashboardData = {
     ],
     // ...
 };
+
+export const dummyStudentEnrolled = [
+    {
+        purchaseDate: '2025-10-25T10:00:00Z',
+        courseTitle: 'Advanced React Hooks Masterclass',
+        student: {
+            name: 'Alice Johnson',
+            imageUrl: 'https://i.pravatar.cc/150?img=45', // Placeholder image URL 1
+        },
+    },
+    {
+        purchaseDate: '2025-10-20T14:30:00Z',
+        courseTitle: 'Full-Stack Node.js and Express',
+        student: {
+            name: 'Bob Smith',
+            imageUrl: 'https://i.pravatar.cc/150?img=17', // Placeholder image URL 2
+        },
+    },
+    {
+        purchaseDate: '2025-09-15T08:15:00Z',
+        courseTitle: 'Introduction to Python for Data Science',
+        student: {
+            name: 'Charlie Brown',
+            imageUrl: 'https://i.pravatar.cc/150?img=52', // Placeholder image URL 3
+        },
+    },
+    {
+        purchaseDate: '2025-09-01T17:50:00Z',
+        courseTitle: 'Web Design Fundamentals with Tailwind CSS',
+        student: {
+            name: 'Diana Prince',
+            imageUrl: 'https://i.pravatar.cc/150?img=34', // Placeholder image URL 4
+        },
+    },
+    {
+        purchaseDate: '2025-08-10T11:00:00Z',
+        courseTitle: 'Advanced React Hooks Masterclass',
+        student: {
+            name: 'Eve Polastri',
+            imageUrl: 'https://i.pravatar.cc/150?img=21', // Placeholder image URL 5
+        },
+    },
+    {
+        purchaseDate: '2025-07-28T09:00:00Z',
+        courseTitle: 'JavaScript ES6+ Deep Dive',
+        student: {
+            name: 'Frank Miller',
+            imageUrl: 'https://i.pravatar.cc/150?img=67', // Placeholder image URL 6
+        },
+    },
+    // Add more objects here as needed to fill the table
+];
 
 

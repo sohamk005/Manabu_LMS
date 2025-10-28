@@ -11,7 +11,7 @@ const Educator = () => {
         <Navbar />
         <div className='flex'>
           <Sidebar />
-          <div className='flex-1'>
+          <div className='flex-1 overflow-x-auto'>
             {<Outlet />}
           </div>
             
