@@ -31,7 +31,7 @@ export const Courses = [
     ],
     educator: "Soham K", // Replace with actual educator ID from your user data
     enrolledStudents: ["user_A", "user_B", "user_C"],
-    courseRatings: [
+    CoursesRatings: [
       { userId: "user_A", rating: 5, _id: "rating_cpp_1" },
       { userId: "user_B", rating: 4, _id: "rating_cpp_2" }
     ],
@@ -63,7 +63,7 @@ export const Courses = [
     ],
     educator: "Soham K",
     enrolledStudents: ["user_D", "user_E"],
-    courseRatings: [
+    CoursesRatings: [
       { userId: "user_D", rating: 5, _id: "rating_java_1" }
     ],
     createdAt: "2024-09-15T10:00:00.000Z",
@@ -94,7 +94,7 @@ export const Courses = [
     ],
     educator: "Soham K",
     enrolledStudents: ["user_F", "user_G", "user_H", "user_I"],
-    courseRatings: [
+    CoursesRatings: [
       { userId: "user_F", rating: 4, _id: "rating_py_1" },
       { userId: "user_G", rating: 5, _id: "rating_py_2" },
       { userId: "user_H", rating: 5, _id: "rating_py_3" }
@@ -131,7 +131,7 @@ export const Courses = [
     ],
     educator: "Soham K", // Replace with actual educator ID from your user data
     enrolledStudents: ["user_A", "user_B", "user_C"],
-    courseRatings: [
+    CoursesRatings: [
       { userId: "user_A", rating: 5, _id: "rating_cpp_1" },
       { userId: "user_B", rating: 4, _id: "rating_cpp_2" }
     ],
@@ -167,7 +167,7 @@ export const Courses = [
     ],
     educator: "Soham K", // Replace with actual educator ID from your user data
     enrolledStudents: ["user_A", "user_B", "user_C"],
-    courseRatings: [
+    CoursesRatings: [
       { userId: "user_A", rating: 5, _id: "rating_cpp_1" },
       { userId: "user_B", rating: 4, _id: "rating_cpp_2" }
     ],
@@ -203,7 +203,7 @@ export const Courses = [
     ],
     educator: "Soham K", // Replace with actual educator ID from your user data
     enrolledStudents: ["user_A", "user_B", "user_C"],
-    courseRatings: [
+    CoursesRatings: [
       { userId: "user_A", rating: 5, _id: "rating_cpp_1" },
       { userId: "user_B", rating: 4, _id: "rating_cpp_2" }
     ],
@@ -231,7 +231,7 @@ export const Courses = [
     ],
     educator: "Soham K",
     enrolledStudents: ["user_D", "user_E"],
-    courseRatings: [
+    CoursesRatings: [
       { userId: "user_D", rating: 5, _id: "rating_java_1" }
     ],
     createdAt: "2024-09-15T10:00:00.000Z",

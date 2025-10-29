@@ -183,15 +183,15 @@ export const addUserRating = async (req, res) => {
         }
 
         // 5. Check if rating already exists
-        const existingRatingIndex = course.courseRatings.findIndex(r => r.userId === userId);
+        const existingRatingIndex = course.CoursesRatings.findIndex(r => r.userId === userId);
 
         // 6. Update or Add Rating
         if (existingRatingIndex > -1) {
             // Update existing rating
-            course.courseRatings[existingRatingIndex].rating = rating;
+            course.CoursesRatings[existingRatingIndex].rating = rating;
         } else {
             // Add new rating
-            course.courseRatings.push({ userId, rating });
+            course.CoursesRatings.push({ userId, rating });
         }
 
         // 7. Save and Respond
