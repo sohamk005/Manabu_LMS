@@ -1,4 +1,3 @@
-```
 # Manabu: A Modern Full-Stack Learning Management System
 
 ## ✨ Overview
@@ -66,4 +65,3 @@ The application uses **React Router** with nested and role-based routing.
 | `/educator` | Educator (Auth) | Dashboard (Layout) | Educator management dashboard. | 
 | `/educator/add-course` | Educator (Auth) | AddCourse | Form to upload and publish new courses. | 
 | `/educator/my-courses` | Educator (Auth) | MyCourses | List of courses managed by the educator. | 
-```
