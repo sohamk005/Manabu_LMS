@@ -63,6 +63,7 @@ import twitter_icon from './twitter_icon.png'
 import insta_icon from './insta_icon.png'
 import earnings from './earnings.png'
 import file_upload_icon from './file_upload_icon.png'
+import blue_tick from './blue_tick.png'
 
 // Export all imported images for easy access across the application
 export const assets = {
@@ -127,7 +128,8 @@ export const assets = {
   twitter_icon,
   insta_icon,
   earnings,
-  file_upload_icon
+  file_upload_icon,
+  blue_tick
 };
 
 // This data would typically be exported from a file like:
